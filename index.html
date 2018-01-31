@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+<title>Sam Robinson</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="website4.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="website4.js"></script>
+</head>
+
+<body>
+
+<div class="top-bar">
+	<div class="left"> 
+		<a href="#hero"><i class="fa fa-laptop fa-lg"> </i> My Website</a>
+	</div>
+	<div class="right hidden-sm hidden-xs" id="nav">
+		<a href="#about">ABOUT</a>
+		<a href="#services">SERVICES</a>
+		<a href="#portfolio">PORTFOLIO</a>
+		<a href="#contact">CONTACT</a>
+	</div>
+	<div>
+		<a id="navBtn" class="right hidden-lg hidden-md"><i class="fa fa-bars fa-lg" onclick="openNav()"></i>
+		</a>
+	</div>
+	<div class="right hidden-lg hidden-md" id="sideNav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#about" onclick="closeNav()">ABOUT</a>
+		<a href="#services" onclick="closeNav()">SERVICES</a>
+		<a href="#portfolio" onclick="closeNav()">PORTFOLIO</a>
+		<a href="#contact" onclick="closeNav()">CONTACT</a>
+	</div>
+</div>
+<!-- Main Page -->
+<div id="hero">
+	<div class="bottom-left">
+		<h1>Welcome to my Website</h1>
+		<p>Here is a little bit about me.</p>
+		<button type="button" class="button"><a href="#about">Learn More</a></button>
+	</div>
+</div>
+<!-- About Section -->
+<div id="about">
+	<div class="hdn"></div>
+	<h2>ABOUT ME</h2>
+  	<p>Key features about me</p>
+  		<div id="features">
+    		<div class="col-lg-3 col-md-6 col-sm-6">
+      			<i class="fa fa-desktop fa-5x"></i>
+      			<p>Classes</p>
+      			<p>I have taken two years of website design. I have achieved the HTML5 certification.</p>
+    		</div>
+   			<div class="col-lg-3 col-md-6 col-sm-6">
+      			<i class="fa fa-heart fa-5x"></i>
+      			<p>Passion</p>
+      			<p>I love building webistes. I can just zone in and work on a website for hours.</p>
+    		</div>
+    		<div class="col-lg-3 col-md-6 col-sm-6">
+      			<i class="fa fa-diamond fa-5x"></i>
+      			<p>Design</p>
+      			<p>I can design a webiste practically anyway that you would like if you have any particular design.</p>
+    		</div>
+    		<div class="col-lg-3 col-md-6 col-sm-6">
+      			<i class="fa fa-cog fa-5x"></i>
+      			<p>Support</p>
+      			<p>I work by myself. If you have any problems or concerns you can contact me below and I will do my best to help.</p>
+    		</div>
+  		</div>
+</div>
+<!-- Services Section -->
+<div id="services">
+	<div class="hdn"></div>
+	<h2>SERVICES</h2>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    	<div id="service-txt">
+      		<h3>What I do.</h3>
+      		<p>I build websites. If you are in need of a website, then you've came to the right place! Here's some of my works.</p>
+      		<button class="button" type="button"><a href="#portfolio"><i class="fa fa-th"> </i> View Our Works</a></button>
+      	</div>
+    </div>
+    <div class="col-lg-6 col-md-12 hidden-xs">
+      <img src="html5.jpg">
+    </div>
+</div>
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <h2>PORTFOLIO</h2>
+  <p>Some of my works so far. All of these are done with IE Class.</p>
+
+  <div class="gallery">
+    <div class="col-lg-4 col-md-4 col-sm-6">
+      <a href= "https://codepen.io/sam631/project/editor/DnYNVx#0">      <img class="images" id="thumbnail" src="moscow.JPG"></a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+     <a href= "https://github.com/sam631/Popeye"> <img class="images" id="thumbnail" src="popeye.jpg"></a>
+      </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+        <a href= "https://github.com/sam631/Secret-Service/tree/master">  <img class="images" id="thumbnail" src="secretservice.JPG"></a>
+        
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="col-lg-4 col-md-4 col-sm-6">
+        <a href="https://github.com/sam631/Computer-Survey/blob/master/lab2-4js.html"> <img class="images" id="thumbnail" src="lab2-4js.jpg"></a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+     <a href="https://github.com/sam631/Ashgabat/tree/master"> <img class="images" id="thumbnail" src="lab8-4.JPG"></a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+     <a href="https://github.com/sam631/Trains/tree/master"> <img class="images" id="thumbnail" src="trainn.jpg"></a>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal hidden-sm hidden-xs">
+  	<span class="modalClose">&times;</span>
+  		<img class="modal-content zoom-in">
+  		<a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+    	<a id="next" onclick="plusSlides(1)">&#10095;</a>
+ </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact">
+  <h2 class>CONTACT ME</h2>
+  <p id="contact-title">Leave me a message!</p>
+  <div class="container">
+    <div class="col-lg-4 col-md-12 col-sm-12">
+      <p>I'll get back to you within 24 hours.</p>
+      <p><span class="fa fa-map-marker"></span> Inez,Kentucky.</p>
+      <p><span class="fa fa-phone"></span> Just email me.</p>
+      <p><span class="fa fa-envelope"></span> sam174627@gmail.com</p> 
+    </div>
+	<form action="mailto:sam174627@gmail.com" method="post" enctype="text/plain" >
+    <div class="col-lg-8 col-md-12 col-sm-12">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="form-group">
+          <button class="button" type="submit">Submit</button>
+        </div>
+      </div> 
+    </div>
+	</form>
+  </div>
+</div>
+
+<footer>
+  <a href="#hero" title="To Top" class="bounce">
+    <span class="fa fa-chevron-up"></span>
+  </a>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/sam174627"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com/sam174627/"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.pinterest.com/sam174627/"><i class="fa fa-pinterest-p"></i></a>
+    <a href="https://www.linkedin.com/in/sam-robinson-384680153/"><i class="fa fa-linkedin"></i></a>
+  </div>
+  <p>Made by Sam Robinson, 2017</p> 
+</footer>
+
+</body>
+</html>
+                                
