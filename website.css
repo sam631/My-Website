@@ -1,4 +1,4 @@
-@media screen and (max-width: 350px){
+
 body { 
     font-family: "Raleway", sans-serif;
     height: 100%;
@@ -530,4 +530,4 @@ footer p {
 #thumbnail:hover {
     transform: scale(1.2);
 }
-}
+
