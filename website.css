@@ -214,7 +214,7 @@ body {
 }
 
 #portfolio {
-	height: 1000px;
+	height: auto;
 	text-align: center;
 	padding-top: 84px;
 }
