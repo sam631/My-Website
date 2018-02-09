@@ -6722,8 +6722,5 @@ button.close {
   }
 }
 .fix{
-  margin: auto -5px auto -72px;
-  }
-.gridgap{
-  grid-gap: 20px;
+  margin: auto 85px auto -72px;
   }
